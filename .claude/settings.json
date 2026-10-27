@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/bekturduishembekov/Desktop/AI-Update-Agent && npm run lint && npm test",
+            "timeout": 60,
+            "statusMessage": "Linting and testing..."
+          }
+        ]
+      }
+    ]
+  }
+}
